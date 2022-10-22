@@ -1,7 +1,14 @@
 .App {
   text-align: center;
 }
-
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #61dafb;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

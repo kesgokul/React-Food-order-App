@@ -1,0 +1,15 @@
+.mealsCard {
+  width: min(90%, 80rem);
+  margin: 0 auto;
+  background-color: #fffeff;
+}
+.mealsList {
+  display: flex;
+  flex-direction: column;
+}
+.statusMessage {
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+}

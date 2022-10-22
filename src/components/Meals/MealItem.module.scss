@@ -1,0 +1,29 @@
+.mealItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+  border-bottom: 0.5px solid black;
+  padding: 4rem 0.5rem;
+  //   background-color: blue;
+}
+
+.mealItemDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  &__desc {
+    font-style: italic;
+    font-size: 1.3rem;
+  }
+  &__price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(218, 144, 32);
+  }
+}

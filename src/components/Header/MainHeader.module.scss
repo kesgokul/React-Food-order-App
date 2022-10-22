@@ -1,0 +1,19 @@
+@use "../UI/config.scss";
+
+.mainHeader {
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: var(--color-maroon-1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 8rem;
+}
+.headerTitle {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+}

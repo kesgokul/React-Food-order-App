@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { Fragment, useContext } from "react";
+import MainHeader from "./components/Header/MainHeader";
+import Hero from "./components/Hero/Hero";
+import Meals from "./components/Meals/Meals";
+import Cart from "./components/Cart/Cart";
+import CartContext from "./CartContext";
+
+// import useAJAX from "./Hooks/use-AJAX";
 
 function App() {
+  const cartCtx = useContext(CartContext);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <MainHeader></MainHeader>
+      <Hero></Hero>
+      <Meals></Meals>
+      {<Cart></Cart>}
+    </Fragment>
   );
 }
 

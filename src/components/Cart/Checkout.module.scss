@@ -1,0 +1,54 @@
+@use "../UI/config.scss";
+
+.checkout-form {
+  display: grid;
+  place-items: center;
+  margin-top: 3rem;
+}
+
+.control {
+  display: grid;
+  grid-template-columns: 1fr;
+  //   justify-items: center;
+  //   align-items: baseline;
+  width: 100%;
+
+  & label {
+    justify-self: left;
+    font-size: 1.3rem;
+    text-align: left;
+  }
+
+  & input {
+    height: 2.5rem;
+    width: min(80%, 30rem);
+    margin-bottom: 1rem;
+  }
+}
+
+.btns {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+button {
+  background: var(--color-maroon-1);
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.control.invalid input {
+  background-color: rgb(253, 208, 124);
+}
+.control.invalid label {
+  color: red;
+}
